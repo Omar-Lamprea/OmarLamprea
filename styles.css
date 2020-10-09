@@ -1,0 +1,50 @@
+.main{
+  background-color: #191c23;
+}
+.main h1, h2, a, h3, span{
+  color: white
+}
+.main a :hover{
+  color: snow;
+}
+.navbar{
+  background-color: #1e4b48 !important;
+}
+.carousel img{
+  max-height: 50vh;
+  object-fit: cover;
+}
+
+.contact{
+  color: black;
+}
+
+.overlay h1{
+  z-index: 1000;
+}
+
+.cards{
+  margin: 20px;
+}
+.card-color{
+  background-color: #e3f7e3 !important;
+}
+.card-color img{
+  object-fit: cover;
+}
+.btn-default{
+  color: white;
+  background-color:#286d68;
+}
+.btn-default:hover{
+  background-color: #1e4b48;
+  color: white;
+}
+
+.footer{
+  background-color: #1e4b48;
+}
+.social-row{
+  width: fit-content;
+  margin: auto;
+}
