@@ -9,7 +9,7 @@
   color: snow;
 }
 .navbar{
-  background-color: #1e4b48 !important;
+  background-color: #1e4b48d4 !important;
 }
 .carousel img{
   height: 50vh;
@@ -48,4 +48,10 @@
 .social-row{
   width: fit-content;
   margin: auto;
+}
+
+
+/* section psychology */
+.container-info{
+  height: 80vh;
 }
