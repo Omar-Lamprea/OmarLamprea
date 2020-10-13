@@ -44,7 +44,11 @@
 }
 .btn-default:hover{
   background-color: #1e4b48;
+  cursor: pointer;
   color: white;
+}
+.card-body a:hover{
+  text-decoration: none;
 }
 
 .footer{
