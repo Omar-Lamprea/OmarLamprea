@@ -12,7 +12,7 @@
   background-color: #1e4b48d4 !important;
 }
 .carousel img{
-  height: 50vh;
+  height: 55vh;
   object-fit: cover;
 }
 
@@ -24,12 +24,17 @@
   z-index: 1000;
 }
 
+
+/* .card-conrainer{
+  display: flex;
+  justify-content: center;
+} */
 .cards{
-  margin: 20px;
+  margin: 1em auto;
 }
-.card-color{
-  background-color: #e3f7e3 !important;
-}
+/* .card-color{
+  background-color: #e3f7e3;
+} */
 .card-color img{
   object-fit: cover;
 }
