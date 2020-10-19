@@ -60,7 +60,22 @@
 }
 
 
-/* section Info */
-.container-info{
-  /* height: 80vh; */
+/* section pages */
+
+ul.navbar-nav-model, .section-cards{
+  display: none;
+}
+
+.container-image img{
+  width: 100%;
+  min-width: 100%;
+  border-radius: 5px;
+}
+.container-gemer{
+  display: grid;
+  justify-items: center;
+}
+
+.container-gemer img{
+  width: 20%;
 }
