@@ -55,7 +55,7 @@
   padding: 10px;
   text-decoration: none;
   /* text-transform: uppercase; */
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 1);
   background: #286d68;
   /* letter-spacing: 1px; */
   font-size: 1.25rem;
@@ -69,7 +69,7 @@
 .button-ligth span{
   display: block;
   position: absolute;
-  background: #ff6016;
+  background: #fff;
 }
 
 /* left */
@@ -140,5 +140,98 @@
   transform-origin: left;
   transition: transform 0.5s;
   transition-delay: 0.5s;
+}
 
+
+
+/* slider cards */
+.container-slider{
+  margin-bottom: 200px !important;
+}
+.slider{
+  position: relative;
+  max-width: 100%;
+  -webkit-box-reflect: below 1px linear-gradient(transparent 70%, #0009)
+}
+.slider .card{
+  position: relative;
+  width: 100%;
+  height: 490px;
+  margin: 0 auto;
+  background: #333;
+  padding: 60px 40px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slider .card .layer{
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#286d68, #31be77);
+  z-index: 1;
+  transition: 0.9s;
+}
+
+.slider .card:hover .layer{
+  top: 0;
+}
+
+/* .swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+} */
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  min-height: 350px;
+  margin: 0 20px;
+  background: #fff;
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+.slider .card .content{
+  position: relative;
+  z-index: 2;
+}
+
+.slider .card .content p{
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.slider .card .content .imgBx{
+  /* width: 100px;
+  height: 100px; */
+  margin: 0 auto;
+  /* border-radius: 50%; */
+  overflow: hidden;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 20 px rgba(0, 0, 0, 0.2);
+}
+.slider .card .content .imgBx img{
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.slider .card .content h2{
+  font-size: 20px;
+  color: #03a9f4;
+  transition: 0.5s;
+}
+
+.slider .card:hover .content h2{
+  color: #fff
 }
