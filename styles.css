@@ -17,7 +17,7 @@
 }
 
 .contact{
-  color: black;
+  color: #03f1df;
 }
 
 .overlay h1{
@@ -32,11 +32,16 @@
 .cards{
   margin: 1em auto;
 }
-/* .card-color{
-  background-color: #e3f7e3;
-} */
+.card-color{
+  background: linear-gradient(#c5c9ca, #393b3a);
+  /* border: 1px solid red;
+  box-shadow: blanchedalmond; */
+}
 .card-color img{
   object-fit: cover;
+}
+.text-color{
+  color: #fff;
 }
 .btn-default{
   color: white;
