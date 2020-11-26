@@ -243,7 +243,8 @@
   justify-content: center;
 }
 .pagination span{
-  margin: 0 5px;
+  margin: 8px 5px;
+  padding: 6px;
 }
 :root {
   --swiper-theme-color: #ffffff;

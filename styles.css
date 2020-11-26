@@ -33,9 +33,9 @@
   margin: 1em auto;
 }
 .card-color{
-  background: linear-gradient(#c5c9ca, #393b3a);
-  /* border: 1px solid red;
-  box-shadow: blanchedalmond; */
+  background: linear-gradient(#c5c9ca, #4e4e4e);
+  border: none;
+  /* box-shadow: blanchedalmond; */
 }
 .card-color img{
   object-fit: cover;
@@ -175,5 +175,12 @@ button-ligth:hover span:nth-child(4){
   transform-origin: left;
   transition: transform 0.5s;
   transition-delay: 0.5s;
+}
 
+
+
+/* Model page */
+
+.P-model{
+  color:black
 }
