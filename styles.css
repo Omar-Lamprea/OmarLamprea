@@ -184,3 +184,28 @@ button-ligth:hover span:nth-child(4){
 .P-model{
   color:black
 }
+
+.container-images{
+  /* display: flex;
+  justify-content: center; */
+}
+.container-images img{
+  margin: 10px 0;
+  border-radius: 5px;
+  width: inherit;
+  box-shadow: 1px 1px 4px 1px white;
+}
+
+.diploma{
+  /* background: #03f1df; */
+}
+.diploma:hover{
+  background: #191c2365;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+
+.construccion{
+  color: rgb(255, 0, 0);
+}
