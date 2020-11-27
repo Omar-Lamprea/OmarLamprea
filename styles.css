@@ -209,3 +209,6 @@ button-ligth:hover span:nth-child(4){
 .construccion{
   color: rgb(255, 0, 0);
 }
+.section-progress img{
+  width: 40vw;
+}
