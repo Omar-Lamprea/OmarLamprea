@@ -44,8 +44,12 @@
   color: #fff;
 }
 .btn-default{
+  margin: 5px;
   color: white;
   background-color:#286d68;
+  box-shadow: 1px 1px 5px 4px #173c3b;
+  border: none;
+  border-radius: 5px;
 }
 .btn-default:hover{
   background-color: #1e4b48;
@@ -185,10 +189,6 @@ button-ligth:hover span:nth-child(4){
   color:black
 }
 
-.container-images{
-  /* display: flex;
-  justify-content: center; */
-}
 .container-images img{
   margin: 10px 0;
   border-radius: 5px;
@@ -196,14 +196,6 @@ button-ligth:hover span:nth-child(4){
   box-shadow: 1px 1px 4px 1px white;
 }
 
-.diploma{
-  /* background: #03f1df; */
-}
-.diploma:hover{
-  background: #191c2365;
-  border-radius: 5px;
-  z-index: 10;
-}
 
 
 .construccion{
@@ -211,4 +203,59 @@ button-ligth:hover span:nth-child(4){
 }
 .section-progress img{
   width: 40vw;
+}
+
+.overlay-imgs{
+  background: rgba(0,0,0,.3);
+  display: none;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  top: 10px;
+  bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 1px rgb(129, 123, 123);
+}
+
+
+.overlay{
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  display: none; /*dinamic*/
+}
+
+.modal {
+  width: 90vw;
+  height: 90vh;
+  background:#1a403e96;
+  padding: 2em;
+  border-radius: .5em;
+  text-align: center;
+  z-index: 2;
+  /* transform: translateY(-3000px); */
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-top: 4em;
+  overflow: auto;
+  display: none; /*dinamic*/
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal img{
+  border-radius: 1%;
+  margin: 5px auto;
+  width: 59.5%;
 }
