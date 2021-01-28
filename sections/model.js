@@ -33,75 +33,81 @@ function developerPage(){
       id: 'img-'
     },
     {
-      title:'',
+      title:'Responsive Design',
       img: '../imgs/dev-content/4responsive.png',
       id:'img-'
     },
     {
-      title:'',
+      title:'Css Grid',
       img:'../imgs/dev-content/5css-grid.png',
       id:'img-'
     },
     {
-      title:'',
+      title:'HTML y CSS',
       img:'../imgs/dev-content/6html-css.png',
       id:'img-'
     },
     {
-      title:'',
+      title:'Básico de JS',
       img:'../imgs/dev-content/7basic-js.png',
       id:'img-'
     },
     {
-      title:'',
+      title:'Fundamentos de JS',
       img:'../imgs/dev-content/8fund-js.png',
       id:'img-'
     },
     {
-      title:'',
+      title:'De Jquery a JS',
       img:'../imgs/dev-content/9jquery.png',
       id:'img-'
     },
     {
-      title:'',
+      title:'Ecma 6+',
       img:'../imgs/dev-content/10ecma6.png',
       id:'img-'
     },
     {
-      title:'',
+      title:'Bootstrap',
       img:'../imgs/dev-content/11bootstrap.png',
       id:'img-'
     }
   ]
 //console.log(imgsCertificates)
 
+let contador = 1
+
 contentCertificates.forEach(el => {
   $templateCertificate.querySelector('img').setAttribute('src', el.img)
   $templateCertificate.querySelector('img').setAttribute('alt', el.title)
-  $templateCertificate.querySelector('section').setAttribute('id', el.id + 1)
+  $templateCertificate.querySelector('section').setAttribute('id', el.id + contador)
+  contador++
 
   let $clone = document.importNode($templateCertificate, true)
   $fragment.appendChild($clone)
 })
 $certificates.appendChild($fragment)
 
+const boxes = document.querySelectorAll('.box-certs')
 
+boxes.forEach(box =>{
+  box.addEventListener('mouseover', showOverlayImages)
+  box.addEventListener('mouseout', hideOverlayImages)
+  box.addEventListener('click', showModal)
+})
 
 
     //overlays and modal- page developer
     const imgContent = document.getElementById('img-1')
     console.log(imgContent)
-    imgContent.addEventListener('mouseover', showOverlayImages)
-    imgContent.addEventListener('mouseout', hideOverlayImages)
-    imgContent.addEventListener('click', showModal)
     
-      const overlayImages = document.getElementById('overlayImages1')
       function showOverlayImages(){
-        overlayImages.style.display = 'flex'
+        this.querySelector('.overlay-imgs').style.display = 'flex'
       }
     
       function hideOverlayImages(){
-        overlayImages.style.display = 'none'
+        this.querySelector('.overlay-imgs').style.display = 'none'
+
       }
     
       //show modal
@@ -109,6 +115,9 @@ $certificates.appendChild($fragment)
     const modal = document.getElementById('modal')
     
     function showModal(){
+      const im = this.querySelector('img').getAttribute('src')
+      document.getElementById('modal-certs-imgs').setAttribute('src', im)
+
       overlayPage.style.display = 'flex'
       modal.style.display = 'flex'
     
