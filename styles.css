@@ -1,3 +1,6 @@
+body{
+  background-color: #f2f2f2;
+}
 
 .main{
   background-color: #191c23;
@@ -9,7 +12,12 @@
   color: snow;
 }
 .navbar{
-  background-color: #1e4b48d4 !important;
+  background-color: #1e4b48f7 !important;
+}
+
+
+.carousel{
+  top: 3rem;
 }
 .carousel img{
   height: 55vh;
@@ -63,10 +71,87 @@
 .footer{
   background-color: #1e4b48;
 }
+.footer a:hover{
+  color: #ff9191;
+  text-decoration: none;
+}
+
 .social-row{
   width: fit-content;
   margin: auto;
 }
+
+
+/* Formulario de contacto */
+.contact-form{
+  --form-ok-color: #4caf50;
+  --form-error-color: #f44336;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.contact-form > *{
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 95%;
+}
+.contact-form textarea{
+  resize: none;
+}
+
+.contact-form legend,
+.contact-form-response{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea{
+font-size: 1rem;
+font-family: sans-serif;
+}
+
+.contact-form input[type="submit"]{
+  width: 50%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form *::placeholder{
+  color: #000;
+}
+
+.contact-form [required]:valid{
+  border: thin solid var(--form-ok-color)
+}
+.contact-form [required]:invalid{
+  border: thin solid var(--form-error-color)
+}
+
+.contact-form-error{
+  margin-top: -1rem;
+  font-size: 80%;
+  background-color: var(--form-error-color);
+  color: white;
+  transition: all 800ms ease;
+}
+
+.contact-form-error.is-active{
+  display: block;
+  animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+.none{
+  display: none;
+}
+
+
+
+
+
+
 
 
 /* section pages */
@@ -259,4 +344,26 @@ button-ligth:hover span:nth-child(4){
   border-radius: 1%;
   margin: 5px auto;
   width: 59%;
+}
+
+
+
+
+
+
+@media screen and (min-width: 1280px){
+  .main{
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    box-shadow: 0px 0px 20px 10px #191c23;
+  }
+  .carousel{
+    width: 97%;
+    margin: auto;
+  }
+  .carousel img{
+    border-radius: 5px;
+  }
 }

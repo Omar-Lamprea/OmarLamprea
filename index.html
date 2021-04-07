@@ -253,30 +253,45 @@
             <h2 class="fadeIn">Contáctame</h2>
           </div>
         </div>
+        <section class="section" data-scroll-spy id="section-14">
+          <form class="contact-form" action="https://formsubmit.co/lampreaomar@gmail.com" target="_blank" method="POST">
+            <input type="text" placeholder="Nombre" name="name" title="El Nombre sólo acepta letras y espacios en blanco" required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+            <input type="email" placeholder="E-mail" name="email" title="Email incorrecto" required pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+            <input type="text" placeholder="Asunto" name="subject" title="El asunto es requerido" required>
+            <textarea name="comments" cols="50" rows="5" placeholder="Escribe tus comentarios" data-pattern="^.{1,255}$" title="Máximo 255 caracteres" required></textarea>
+            <input type="submit" name="send">
+          </form>
+          <div class="contact-form-loader none">
+            <img src="./imgs/oval.svg" alt="loading">
+          </div>
+          <div class="contact-form-response none">
+            <p>Los datos han sido enviados</p>
+          </div>
+        </section>
         <div class="row social-row mt-2 mb-2">
           <div class="col mb-3 text-center">
-            <a href="https://github.com/Omar-Lamprea">
-              <img src="imgs/contact/github.png" width="35" alt="">
+            <a href="https://github.com/Omar-Lamprea" target="_blank">
+              <img src="imgs/contact/github.png" width="35" alt="GitHub">
             </a>
           </div>
           <div class="col mb-3 text-center">
-            <a href="https://www.facebook.com/omar.lamprea/">
-              <img src="imgs/contact/facebook.svg" width="35" alt="">
+            <a href="https://www.facebook.com/omar.lamprea/" target="_blank">
+              <img src="imgs/contact/facebook.svg" width="35" alt="Facebook">
             </a>
           </div>
           <div class="col mb-3 text-center">
-            <a href="https://www.instagram.com/omar.lamprea/">
-              <img src="imgs/contact/instagram.svg" width="35" alt="">
+            <a href="https://www.instagram.com/omar.lamprea/" target="_blank">
+              <img src="imgs/contact/instagram.svg" width="35" alt="Inatagram">
             </a>
           </div>
           <div class="col mb-3 text-center">
-            <a href="#">
-              <img src="imgs/contact/twitter.svg" width="35" alt="">
+            <a href="https://www.youtube.com/channel/UCim-rAms7dhybsiQ8XENvdA" target="_blank">
+              <img src="imgs/contact/youtube.png" height="35" alt="Yb">
             </a>
           </div>
           <div class="col mb-3 text-center">
-            <a href="https://www.twitch.tv/diamonik1">
-              <img src="imgs/contact/thitch.png" width="35" alt="">
+            <a href="https://www.twitch.tv/diamonik1" target="_blank">
+              <img src="imgs/contact/thitch.png" width="35" alt="Twitch">
             </a>
           </div>
         </div>
@@ -291,5 +306,6 @@
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="slider.js"></script>
+  <script src="contact.js"></script>
 </body>
 </html>
