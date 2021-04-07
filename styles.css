@@ -67,9 +67,13 @@ body{
 .card-body a:hover{
   text-decoration: none;
 }
+.card-title{
+  margin-top: 5rem;
+}
 
 .footer{
   background-color: #1e4b48;
+  margin-top: -2rem;
 }
 .footer a:hover{
   color: #ff9191;
@@ -87,7 +91,9 @@ body{
   --form-ok-color: #4caf50;
   --form-error-color: #f44336;
   margin: 0 auto;
+  padding: 0.5rem 0;
   width: 80%;
+  background-color: #191c2378;
 }
 
 .contact-form > *{
@@ -365,5 +371,9 @@ button-ligth:hover span:nth-child(4){
   }
   .carousel img{
     border-radius: 5px;
+  }
+  .container-slider{
+    width: 97%;
+    margin: auto;
   }
 }
