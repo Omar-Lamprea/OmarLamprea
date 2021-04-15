@@ -41,12 +41,13 @@ body{
   margin: 1em auto;
 }
 .card-color{
-  background: linear-gradient(#c5c9ca, #4e4e4e);
+  background: transparent;
   border: none;
   /* box-shadow: blanchedalmond; */
 }
 .card-color img{
   object-fit: cover;
+  border-radius: 50%;
 }
 .text-color{
   color: #fff;
@@ -72,14 +73,17 @@ body{
 }
 
 .footer{
-  background-color: #1e4b48;
+  /* background-color: #1e4b48; */
   margin-top: -2rem;
 }
-.footer a:hover{
+.social a:hover{
   color: #ff9191;
   text-decoration: none;
 }
 
+.social{
+  background-color: #1e4b48;
+}
 .social-row{
   width: fit-content;
   margin: auto;
@@ -363,7 +367,7 @@ button-ligth:hover span:nth-child(4){
     display: flex;
     flex-flow: column;
     margin: auto;
-    box-shadow: 0px 0px 20px 10px #191c23;
+    box-shadow: 0px 0px 3px 2px #191c23;
   }
   .carousel{
     width: 97%;
