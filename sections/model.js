@@ -10,17 +10,19 @@ if(card === 'developer'){
     const $templateCertificate = document.getElementById('template-certificate').content,
           $fetch = document.getElementById('certificates'),
           $fragment = document.createDocumentFragment();
+    // console.log($templateCertificate)
     
     async function getData(){
       try{
         let contador = 1
         let res = await fetch('certificates.json')
         let json = await res.json()
-        // console.log(res, json)
         
         if(!res.ok) throw {status: res.status, statusText:res.statusText}
+
         
         json.forEach(el => {
+          // console.log(el.title)
           $templateCertificate.querySelector('img').setAttribute('src', el.img)
           $templateCertificate.querySelector('img').setAttribute('alt', el.title)
           $templateCertificate.querySelector('section').setAttribute('id', el.id + contador)

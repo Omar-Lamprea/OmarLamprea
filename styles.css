@@ -30,6 +30,9 @@ body{
 .contact{
   color: #03f1df;
 }
+.contact:hover{
+  color: #00a1ff;
+}
 
 .overlay h1{
   z-index: 1000;
@@ -54,6 +57,9 @@ body{
 }
 .text-color{
   color: #fff;
+}
+small{
+  color: grey;
 }
 .btn-default{
   margin: 5px;
@@ -285,6 +291,11 @@ button-ligth:hover span:nth-child(4){
 
 .P-model{
   color:black
+}
+
+.container-images{
+  height: 20rem;
+  overflow-y: auto;
 }
 
 .container-images img{
