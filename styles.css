@@ -202,95 +202,8 @@ ul.navbar-nav-model, .section-cards{
 }
 
 /* button-cards */
-button-ligth{
-  position: relative;
-  display: inline-block;
-  padding: 10px;
+.details a{
   text-decoration: none;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.4);
-  background: #262c37;
-  letter-spacing: 2px;
-  font-size: 70px;
-  transition: 0.5s;
-}
-button-ligth:hover{
-  color: rgba(255, 255, 255, 1);
-}
-button-ligth span{
-  display: block;
-  position: absolute;
-  background: #2898ff;
-}
-
-/* left */
-button-ligth span:nth-child(1){
-  left: 0;
-  bottom: 0;
-  width: 1px;
-  height: 100%;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: transform 0.5s;
-}
-button-ligth:hover span:nth-child(1){
-  transform: scaleY(1);
-  transform-origin: bottom;
-  transition: transform 0.5s;
-}
-
-/* Button */
-button-ligth span:nth-child(2){
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s;
-}
-button-ligth:hover span:nth-child(2){
-  transform: scaleX(1);
-  transform-origin: left;
-  transition: transform 0.5s;
-}
-
-/* Rigth */
-button-ligth span:nth-child(3){
-  right: 0;
-  bottom: 0;
-  width: 1px;
-  height: 100%;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: transform 0.5s;
-  transition-delay: 0.5s;
-
-}
-button-ligth:hover span:nth-child(3){
-  transform: scaleY(1);
-  transform-origin: bottom;
-  transition: transform 0.5s;
-  transition-delay: 0.5s;
-
-}
-
-/* Top */
-button-ligth span:nth-child(4){
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 1px;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s;
-  transition-delay: 0.5s;
-}
-button-ligth:hover span:nth-child(4){
-  transform: scaleX(1);
-  transform-origin: left;
-  transition: transform 0.5s;
-  transition-delay: 0.5s;
 }
 
 
@@ -322,9 +235,6 @@ button-ligth:hover span:nth-child(4){
   width: 40vw;
 }
 
-.projects{
-  /* display: flex; */
-}
 .projects-imgs{
   width: 100%;
   /* margin: auto; */
@@ -334,6 +244,12 @@ button-ligth:hover span:nth-child(4){
   width: 100%;
   border-radius: 5%;
   height: 14rem;
+}
+.projects-imgs img:hover{
+  transform: translate(-5px, -5px);
+  transition: all ease .5s;
+  box-shadow: 4px 4px 6px 1px #000;
+
 }
 
 
@@ -399,7 +315,7 @@ button-ligth:hover span:nth-child(4){
 
 
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1023px){
   .main{
     width: 90%;
     display: flex;
