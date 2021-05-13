@@ -53,5 +53,10 @@
     "title":"Bootstrap",
     "img":"../imgs/dev-content/11bootstrap.png",
     "id":"img-"
+  },
+  {
+    "title":"Python",
+    "img":"../imgs/dev-content/12python.jpg",
+    "id":"img-"
   }
 ]
