@@ -58,5 +58,10 @@
     "title":"Python",
     "img":"../imgs/dev-content/12python.jpg",
     "id":"img-"
+  },
+  {
+    "title":"Java SE",
+    "img":"../imgs/dev-content/13javaSE.jpg",
+    "id":"img-"
   }
 ]
